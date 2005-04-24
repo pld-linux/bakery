@@ -14,6 +14,7 @@ BuildRequires:	gconfmm-devel >= 2.6.0
 BuildRequires:	gnome-vfsmm-devel >= 2.6.0
 BuildRequires:	gtkmm-devel >= 2.6.0
 BuildRequires:	intltool
+BuildRequires:	libglademm-devel >= 2.4.0
 BuildRequires:	libtool
 BuildRequires:	libxml++-devel >= 2.8.0
 BuildRequires:	pkgconfig
@@ -50,6 +51,7 @@ Requires:       %{name} = %{version}
 Requires:	gconfmm-devel >= 2.6.0
 Requires:	gnome-vfsmm-devel >= 2.6.0
 Requires:	gtkmm-devel >= 2.6.0
+Requires:	libglademm-devel >= 2.4.0
 Requires:	libxml++-devel >= 2.8.0
 
 %description devel
