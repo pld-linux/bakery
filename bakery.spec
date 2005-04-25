@@ -7,7 +7,7 @@ License:	GPL v.2
 Group:		X11/Development/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/bakery/2.3/%{name}-%{version}.tar.gz
 # Source0-md5:	e474af13aa848d507babe03f66c3a4b9
-URL:		http://bakery.sourceforge.net
+URL:		http://bakery.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gconfmm-devel >= 2.6.0
@@ -33,7 +33,7 @@ applications using gtkmm and/or gnomemm.
 - contains a few utility classes.
 
 %description -l pl
-Bakery jest struktur± C++ do tworzenia dokumentowo bazowanych
+Bakery jest struktur± C++ do tworzenia opartych na dokumentach
 programów dla GNOME przy u¿yciu gtkmm i/lub gnomemm.
 
 - dostarcza architektury Dokument/Widok
@@ -44,10 +44,10 @@ programów dla GNOME przy u¿yciu gtkmm i/lub gnomemm.
 - zawiera kilka klas u¿ytkowych
 
 %package devel
-Summary:        Bakery header files
-Summary(pl):    Pliki nag³ówkowe Bakery
-Group:          Development/Libraries
-Requires:       %{name} = %{version}
+Summary:	Bakery header files
+Summary(pl):	Pliki nag³ówkowe Bakery
+Group:		Development/Libraries
+Requires:	%{name} = %{version}-%{release}
 Requires:	gconfmm-devel >= 2.6.0
 Requires:	gnome-vfsmm-devel >= 2.6.0
 Requires:	gtkmm-devel >= 2.6.0
@@ -61,10 +61,10 @@ Header files for Bakery framework.
 Pliki nag³ówkowe dla struktury Bakery.
 
 %package static
-Summary:        Static Bakery library
-Summary(pl):    Statyczna biblioteka Bakery
-Group:          Development/Libraries
-Requires:       %{name}-devel = %{version}
+Summary:	Static Bakery library
+Summary(pl):	Statyczna biblioteka Bakery
+Group:		Development/Libraries
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static Bakery library.
