@@ -1,12 +1,12 @@
 Summary:	C++ Framework for creating GNOME applications
 Summary(pl):	Struktura C++ do tworzenia programów dla GNOME
 Name:		bakery
-Version:	2.3.15
+Version:	2.4.0
 Release:	1
 License:	GPL v.2
 Group:		X11/Development/Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/bakery/2.3/%{name}-%{version}.tar.gz
-# Source0-md5:	735d83cb4a93630706edef5120e1a2f8
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/bakery/2.4/%{name}-%{version}.tar.gz
+# Source0-md5:	29a1774c3fe6af37c88abad0d6267781
 URL:		http://bakery.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -92,7 +92,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # bogus (well, author is German guy ;)
-rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/de
+#rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/de
 
 %find_lang %{name}
 
