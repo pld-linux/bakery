@@ -12,13 +12,18 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gconfmm-devel >= 2.6.0
 BuildRequires:	gnome-vfsmm-devel >= 2.6.0
-BuildRequires:	gtkmm-devel >= 2.6.0
+BuildRequires:	gtkmm-devel >= 2.8.0
 BuildRequires:	intltool
 BuildRequires:	libglademm-devel >= 2.4.0
 BuildRequires:	libtool
 BuildRequires:	libxml++-devel >= 2.8.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
+Requires:	gconfmm >= 2.6.0
+Requires:	gnome-vfsmm >= 2.6.0
+Requires:	gtkmm >= 2.8.0
+Requires:	libglademm >= 2.4.0
+Requires:	libxml++ >= 2.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,7 +55,7 @@ Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gconfmm-devel >= 2.6.0
 Requires:	gnome-vfsmm-devel >= 2.6.0
-Requires:	gtkmm-devel >= 2.6.0
+Requires:	gtkmm-devel >= 2.8.0
 Requires:	libglademm-devel >= 2.4.0
 Requires:	libxml++-devel >= 2.8.0
 
@@ -90,9 +95,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-
-# bogus (well, author is German guy ;)
-#rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/de
 
 %find_lang %{name}
 
