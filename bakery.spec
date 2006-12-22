@@ -1,29 +1,29 @@
 Summary:	C++ Framework for creating GNOME applications
 Summary(pl):	Struktura C++ do tworzenia programów dla GNOME
 Name:		bakery
-Version:	2.4.0
+Version:	2.4.1
 Release:	1
 License:	GPL v.2
 Group:		X11/Development/Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/bakery/2.4/%{name}-%{version}.tar.gz
-# Source0-md5:	29a1774c3fe6af37c88abad0d6267781
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/bakery/2.4/%{name}-%{version}.tar.bz2
+# Source0-md5:	9ac57944cadde3d1c2ce35f48c66eb80
 URL:		http://bakery.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gconfmm-devel >= 2.14.2
+BuildRequires:	gconfmm-devel >= 2.16.0
 BuildRequires:	gettext-devel
-BuildRequires:	gnome-vfsmm-devel >= 2.15.1
-BuildRequires:	gtkmm-devel >= 2.9.10
+BuildRequires:	gnome-vfsmm-devel >= 2.16.0
+BuildRequires:	gtkmm-devel >= 2.10.5
 BuildRequires:	intltool
-BuildRequires:	libglademm-devel >= 2.6.2
+BuildRequires:	libglademm-devel >= 2.6.3
 BuildRequires:	libtool
 BuildRequires:	libxml++-devel >= 2.14.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
-Requires:	gconfmm >= 2.14.2
-Requires:	gnome-vfsmm >= 2.15.1
-Requires:	gtkmm >= 2.9.10
-Requires:	libglademm >= 2.6.2
+Requires:	gconfmm >= 2.16.0
+Requires:	gnome-vfsmm >= 2.16.0
+Requires:	gtkmm >= 2.10.5
+Requires:	libglademm >= 2.6.3
 Requires:	libxml++ >= 2.14.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -54,10 +54,10 @@ Summary:	Bakery header files
 Summary(pl):	Pliki nag³ówkowe Bakery
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	gconfmm-devel >= 2.14.2
-Requires:	gnome-vfsmm-devel >= 2.15.1
-Requires:	gtkmm-devel >= 2.9.10
-Requires:	libglademm-devel >= 2.6.2
+Requires:	gconfmm-devel >= 2.16.0
+Requires:	gnome-vfsmm-devel >= 2.16.0
+Requires:	gtkmm-devel >= 2.10.5
+Requires:	libglademm-devel >= 2.6.3
 Requires:	libxml++-devel >= 2.14.0
 
 %description devel
