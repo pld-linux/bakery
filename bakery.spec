@@ -1,5 +1,5 @@
 Summary:	C++ Framework for creating GNOME applications
-Summary(pl):	Struktura C++ do tworzenia programÛw dla GNOME
+Summary(pl.UTF-8):   Struktura C++ do tworzenia program√≥w dla GNOME
 Name:		bakery
 Version:	2.4.1
 Release:	1
@@ -38,20 +38,20 @@ applications using gtkmm and/or gnomemm.
 - gives your application structure,
 - contains a few utility classes.
 
-%description -l pl
-Bakery jest struktur± C++ do tworzenia opartych na dokumentach
-programÛw dla GNOME przy uøyciu gtkmm i/lub gnomemm.
+%description -l pl.UTF-8
+Bakery jest strukturƒÖ C++ do tworzenia opartych na dokumentach
+program√≥w dla GNOME przy u≈ºyciu gtkmm i/lub gnomemm.
 
 - dostarcza architektury Dokument/Widok
-- moøe uøywaÊ XML jako formatu zapisu Dokumentu,
-- dostarcza domy∂lnej, ≥atwo modyfikowalnej funkcjonalno∂ci,
-- pozwala na ≥atwy start w tworzeniu aplikacji GNOME,
+- mo≈ºe u≈ºywaƒá XML jako formatu zapisu Dokumentu,
+- dostarcza domy≈õlnej, ≈Çatwo modyfikowalnej funkcjonalno≈õci,
+- pozwala na ≈Çatwy start w tworzeniu aplikacji GNOME,
 - nadaje aplikacji format,
-- zawiera kilka klas uøytkowych
+- zawiera kilka klas u≈ºytkowych
 
 %package devel
 Summary:	Bakery header files
-Summary(pl):	Pliki nag≥Ûwkowe Bakery
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe Bakery
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gconfmm-devel >= 2.16.0
@@ -63,19 +63,19 @@ Requires:	libxml++-devel >= 2.14.0
 %description devel
 Header files for Bakery framework.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe dla struktury Bakery.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe dla struktury Bakery.
 
 %package static
 Summary:	Static Bakery library
-Summary(pl):	Statyczna biblioteka Bakery
+Summary(pl.UTF-8):   Statyczna biblioteka Bakery
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static Bakery library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka Bakery.
 
 %prep
