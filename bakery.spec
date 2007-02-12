@@ -1,5 +1,5 @@
 Summary:	C++ Framework for creating GNOME applications
-Summary(pl.UTF-8):   Struktura C++ do tworzenia programów dla GNOME
+Summary(pl.UTF-8):	Struktura C++ do tworzenia programów dla GNOME
 Name:		bakery
 Version:	2.4.1
 Release:	1
@@ -51,7 +51,7 @@ programów dla GNOME przy użyciu gtkmm i/lub gnomemm.
 
 %package devel
 Summary:	Bakery header files
-Summary(pl.UTF-8):   Pliki nagłówkowe Bakery
+Summary(pl.UTF-8):	Pliki nagłówkowe Bakery
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gconfmm-devel >= 2.16.0
@@ -68,7 +68,7 @@ Pliki nagłówkowe dla struktury Bakery.
 
 %package static
 Summary:	Static Bakery library
-Summary(pl.UTF-8):   Statyczna biblioteka Bakery
+Summary(pl.UTF-8):	Statyczna biblioteka Bakery
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
