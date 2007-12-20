@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Struktura C++ do tworzenia programów dla GNOME
 Name:		bakery
 Version:	2.4.3
 Release:	1
-License:	GPL v.2
+License:	LGPL v2+
 Group:		X11/Development/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/bakery/2.4/%{name}-%{version}.tar.bz2
 # Source0-md5:	7d22a4610656c412e6ae3918a3e82304
