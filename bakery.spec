@@ -15,7 +15,6 @@ BuildRequires:	gettext-devel
 BuildRequires:	gnome-vfsmm-devel >= 2.16.0
 BuildRequires:	gtkmm-devel >= 2.10.5
 BuildRequires:	intltool
-BuildRequires:	libcap-devel
 BuildRequires:	libglademm-devel >= 2.6.3
 BuildRequires:	libtool
 BuildRequires:	libxml++-devel >= 2.14.0
