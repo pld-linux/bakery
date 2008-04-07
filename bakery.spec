@@ -2,7 +2,7 @@ Summary:	C++ Framework for creating GNOME applications
 Summary(pl.UTF-8):	Struktura C++ do tworzenia programów dla GNOME
 Name:		bakery
 Version:	2.4.3
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		X11/Development/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/bakery/2.4/%{name}-%{version}.tar.bz2
@@ -52,7 +52,7 @@ programów dla GNOME przy użyciu gtkmm i/lub gnomemm.
 %package devel
 Summary:	Bakery header files
 Summary(pl.UTF-8):	Pliki nagłówkowe Bakery
-Group:		Development/Libraries
+Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gconfmm-devel >= 2.16.0
 Requires:	gnome-vfsmm-devel >= 2.16.0
@@ -69,7 +69,7 @@ Pliki nagłówkowe dla struktury Bakery.
 %package static
 Summary:	Static Bakery library
 Summary(pl.UTF-8):	Statyczna biblioteka Bakery
-Group:		Development/Libraries
+Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
@@ -108,15 +108,18 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %{_libdir}/libbakery-2.4-2.4.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libbakery-2.4-2.4.so.1
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
+%attr(755,root,root) %{_libdir}/libbakery-2.4.so
+%dir %{_libdir}/bakery-2.4
+%{_libdir}/bakery-2.4/include
+%{_libdir}/libbakery-2.4.la
 %{_includedir}/bakery-2.4
-%{_pkgconfigdir}/*.pc
+%{_pkgconfigdir}/bakery-2.4.pc
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/*.a
+%{_libdir}/libbakery-2.4.a
