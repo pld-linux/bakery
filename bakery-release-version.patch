@@ -1,0 +1,15 @@
+2008-Dec-11  Yaakov Selkowitz  <yselkowitz@users.sourceforge.net>
+
+	* configure.in: Fix definition of GENERIC_MAJOR_VERSION.
+
+--- bakery-2.6.2/configure.in	2008-12-11 10:41:01.000000000 -0600
++++ bakery-2.6.2/configure.in	2008-12-11 13:16:07.518625000 -0600
+@@ -17,7 +17,7 @@
+ #########################################################################
+ #  Version and initialization
+ #########################################################################
+-[GTKMM_MAJOR_VERSION]=GENERIC_MAJOR_VERSION
++[GENERIC_MAJOR_VERSION]=GENERIC_MAJOR_VERSION
+ [GENERIC_MINOR_VERSION]=GENERIC_MINOR_VERSION
+ [GENERIC_MICRO_VERSION]=GENERIC_MICRO_VERSION
+ [GENERIC_EXTRA_VERSION]=GENERIC_EXTRA_VERSION
