@@ -13,7 +13,7 @@ URL:		http://bakery.sourceforge.net/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	gconfmm-devel >= 2.16.0
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glibmm-devel >= 2.16.0
 BuildRequires:	gtkmm-devel >= 2.10.5
 BuildRequires:	intltool
