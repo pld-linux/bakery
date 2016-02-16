@@ -2,7 +2,7 @@ Summary:	C++ Framework for creating GNOME applications
 Summary(pl.UTF-8):	Struktura C++ do tworzenia programów dla GNOME
 Name:		bakery
 Version:	2.6.3
-Release:	3
+Release:	4
 License:	LGPL v2+
 Group:		X11/Development/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/bakery/2.6/%{name}-%{version}.tar.bz2
@@ -18,7 +18,8 @@ BuildRequires:	glibmm-devel >= 2.16.0
 BuildRequires:	gtkmm-devel >= 2.10.5
 BuildRequires:	intltool
 BuildRequires:	libglademm-devel >= 2.6.3
-BuildRequires:	libtool
+BuildRequires:	libstdc++-devel >= 6:4.3
+BuildRequires:	libtool >= 2:1.5
 BuildRequires:	libxml++2-devel >= 2.24.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
@@ -90,6 +91,8 @@ Statyczna biblioteka Bakery.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
+# for glibmm 2.46+/libxml++ 2.40+
+CXXFLAGS="%{rpmcxxflags} -std=c++0x"
 %configure
 %{__make}
 
